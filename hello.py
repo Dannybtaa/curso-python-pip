@@ -46,7 +46,17 @@ eso debe funcionar
 
 2. pego link de github
 
-git remote add origin https://github.com/Dannybtaa/curso-python-pip.git
+DEBES SER LA APRTE QUE DICE SSH
+
+git remote add origin git@github.com:Dannybtaa/curso-python-pip.git
 
 3. verificamos con 
 git remote -v
+
+4. agragar cambio
+git add *
+
+5. commit
+git commit -m "mi primer archivo"
+
+6.git push origin master
