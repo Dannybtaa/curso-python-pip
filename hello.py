@@ -46,7 +46,8 @@ eso debe funcionar
 
 2. pego link de github
 
-DEBES SER LA APRTE QUE DICE SSH
+I M P O R T A N T E:
+DEBES SER LA APRaTE QUE DICE SSH
 
 git remote add origin git@github.com:Dannybtaa/curso-python-pip.git
 
@@ -54,9 +55,15 @@ git remote add origin git@github.com:Dannybtaa/curso-python-pip.git
 git remote -v
 
 4. agragar cambio
-git add *
+git add * 
+
+o usar 
+git add .
 
 5. commit
 git commit -m "mi primer archivo"
 
 6.git push origin master
+
+
+para hacer los commits se debe estar en al carpeta ppal
