@@ -67,3 +67,5 @@ git commit -m "mi primer archivo"
 
 
 para hacer los commits se debe estar en al carpeta ppal
+salir de la carpeta:
+cd .. 
