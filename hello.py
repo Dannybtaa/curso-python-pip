@@ -69,3 +69,47 @@ git commit -m "mi primer archivo"
 para hacer los commits se debe estar en al carpeta ppal
 salir de la carpeta:
 cd .. 
+´´´
+
+CREAR UN ANVIENTE VIRTUAL
+
+sudo apt install -y python3-venv
+
+al entrar en al carpeta de la caul deseo el entorno virtual escribo
+
+python3 -m venv env
+
+ahora vemos que se crea la carpeta env/
+
+activar el ambiente
+
+source env/bin/activate
+
+en la terminal aparece un indicativo env
+
+para salir del ambiente virtual escribimos
+deactivate
+
+para saber si tengo el ambiente configurado enla carpeta se puede correr
+which python3
+which pip3
+
+
+con pip freeze no dara repsuesta porque el ambiente estará aislado
+
+# da las dependcias del proyecto
+pip3 freeze
+
+# vamos a crear un archivo txt para instalar las dependecias de manera automatica  y no mabual
+
+requirements.txt
+
+pip3 freeze > requirements.txt
+
+# ver dentro de requirements
+
+cat requirements.txt
+
+para instalar se escribe
+
+pip3 install -r requirements.txt
