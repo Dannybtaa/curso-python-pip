@@ -8,17 +8,30 @@ entrar a la carpeta
 cd game
 correr
 python3 main.py
+```
 
-App Project
-
+# App Project
+```sh
+clonar el proyecto:
 git clone
-cd app
-python3 -m venv env
-source env/bin/activate
-pip3 install -r requirements.txt
-python3 main.py
 
-```´
+entrar a la carpeta:
+cd app
+
+crear el entorno virtual:
+python3 -m venv env
+
+activar ambiente:
+source env/bin/activate
+
+leer requerimientos:
+pip3 install -r requirements.txt
+
+correr:
+python3 main.py
+```
+
+
 
 ¿Que es pip?
 PIP es el gestor de paquetes de python, es posible buscar librerías en la pagina pypi.org.
