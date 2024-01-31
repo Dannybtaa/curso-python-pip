@@ -71,7 +71,7 @@ salir de la carpeta:
 cd .. 
 ´´´
 
-CREAR UN ANVIENTE VIRTUAL
+CREAR UN AmbIENTE VIRTUAL
 
 sudo apt install -y python3-venv
 
@@ -113,3 +113,48 @@ cat requirements.txt
 para instalar se escribe
 
 pip3 install -r requirements.txt
+
+
+para correr docker en la carpeta deseada
+
+1.construcciond el contenedor
+docker-compose build
+
+2.lanzar el contenedor
+docker-compose up -d
+
+3.ver el estadod el contenedor
+docker-compose ps
+
+ACA NOS APARECE EL NOMBRE ASI: app-web-server-1 
+NAME               IMAGE            COMMAND                  SERVICE      CREATED          STATUS          PORTS
+app-web-server-1   app-web-server   "/bin/sh -c 'bash -c…"   web-server   40 seconds ago   Up 39 seconds
+
+EL NOMBRE ENTONCES SERIA SOLO: web-server
+
+4.ingresar al ambienre
+docker-compose exec NOMBREDELAMBIENTE  bash
+
+docker-compose exec web-server bash
+
+5.salir del conteneor 
+exit
+
+
+si me equivoco en algo y debo crearlo otra vez:
+1.construcciond el contenedor
+docker-compose build
+
+2. bajar el contenedor anterior
+docker-compose down
+
+3.lanzar el contenedor
+docker-compose up -d
+
+4.ver el estadod el contenedor
+docker-compose ps
+
+5.ingresar al ambienre
+docker-compose exec NOMBREDELAMBIENTE  bash
+
+docker-compose exec web-server bash

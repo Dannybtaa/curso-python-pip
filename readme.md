@@ -47,3 +47,24 @@ pip3 freeze
 
 en al carpeta charts instalamos
 pip3 install matplotlib
+
+
+# Web server:
+# ver la pagina fakeapi.platzi.com
+
+primero desactivar cualquier amviente
+deactivate
+
+en al carpeta creada web-server activamos el nuevo ambiente
+python3 -m venv env
+
+activar ambiente
+source env/bin/activate
+
+instalamos requests
+pip3 install requests
+
+creamos los requerimientos
+pip3 freeze > requirements.txt
+
+
